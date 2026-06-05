@@ -31,6 +31,15 @@
         android:layout_height="wrap_content"
         android:text="Status Layanan: Tidak aktif."
         android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/adminStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Admin: Tidak Aktif."
+        android:textSize="14sp"
+        android:textStyle="bold"
         android:layout_marginBottom="20dp"/>
 
     <Button
@@ -44,6 +53,21 @@
         android:id="@+id/stopServiceButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hentikan Pemantauan Data" />
+        android:text="Hentikan Pemantauan Data"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/enableAdminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktifkan Admin Perangkat"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/startChatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buka Obrolan"
+        android:layout_marginBottom="10dp"/>
 
 </LinearLayout>
