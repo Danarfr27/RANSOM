@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".ui.DashboardScreen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kontrol Panel Orang Tua (SADAP)"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/deviceIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Device ID Anak"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/btnEncrypt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Aktifkan Kunci Data"
+                android:layout_marginEnd="5dp"/>
+            <Button
+                android:id="@+id/btnDecrypt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buka Kunci Data"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGetKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambil Kunci Akses"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/encryptionKeyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kunci Akses: N/A"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:background="#F0F0F0"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/btnPing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cek Koneksi"
+                android:layout_marginEnd="5dp"/>
+            <Button
+                android:id="@+id/btnGetStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dapatkan Status"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Perangkat: Menunggu..."
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:background="#E0E0E0"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi: Menunggu..."
+            android:textSize="14sp"
+            android:background="#E0E0E0"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
